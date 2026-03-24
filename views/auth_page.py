@@ -1,6 +1,10 @@
 import customtkinter as ctk
 from PIL import Image, ImageDraw
 import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+from services import auth_service
 
 
 class AuthPage(ctk.CTkFrame):
@@ -9,6 +13,7 @@ class AuthPage(ctk.CTkFrame):
         super().__init__(parent, fg_color="transparent")
         self.pack(fill="both", expand=True)
 
+        self.app = parent
         self.current_tab = "login"
 
         # main card in the center
@@ -21,8 +26,12 @@ class AuthPage(ctk.CTkFrame):
 
         # this frame will hold the form fields
         self.pnl_form = ctk.CTkFrame(self.pnl_card, fg_color="transparent")
-        self.pnl_form.grid(row=2, column=0, sticky="ew", padx=40, pady=(10, 40))
+        self.pnl_form.grid(row=2, column=0, sticky="ew", padx=40, pady=(10, 10))
         self.pnl_form.grid_columnconfigure(0, weight=1)
+
+        # error label at the bottom of the card
+        self.lbl_error = ctk.CTkLabel(self.pnl_card, text="", text_color="red")
+        self.lbl_error.grid(row=3, column=0, pady=(0, 20))
 
         # show login by default
         self.show_login_form()
@@ -72,6 +81,7 @@ class AuthPage(ctk.CTkFrame):
         # remove all widgets from the form area
         for w in self.pnl_form.winfo_children():
             w.destroy()
+        self.lbl_error.configure(text="")
 
     def show_login_form(self):
         self.current_tab = "login"
@@ -122,10 +132,32 @@ class AuthPage(ctk.CTkFrame):
     def handle_login(self):
         email = self.ent_login_email.get().strip()
         password = self.ent_login_password.get()
-        print("login:", email)
+
+        if email == "" or password == "":
+            self.lbl_error.configure(text="Please fill in all fields")
+            return
+
+        success, result = auth_service.login(email, password)
+        if success:
+            self.app.on_login_success(result)
+        else:
+            self.lbl_error.configure(text=result)
 
     def handle_signup(self):
         name = self.ent_signup_name.get().strip()
         email = self.ent_signup_email.get().strip()
         password = self.ent_signup_password.get()
-        print("signup:", name, email)
+
+        if name == "" or email == "" or password == "":
+            self.lbl_error.configure(text="Please fill in all fields")
+            return
+
+        if len(password) < 6:
+            self.lbl_error.configure(text="Password must be at least 6 characters")
+            return
+
+        success, result = auth_service.signup(name, email, password)
+        if success:
+            self.app.on_login_success(result)
+        else:
+            self.lbl_error.configure(text=result)

@@ -68,9 +68,3 @@ The user can log their weight for the day. One entry per day.
 Optional: A graph showing how body weight has changed over time.
 
 ---
-
-## Notes
-
-- Desktop app only, no backend/server, local storage probably with SQLite
-- Keep the UI clean and functional, nothing fancy
-- The optional stuff (1RM, weight graph) can be added later if time allows

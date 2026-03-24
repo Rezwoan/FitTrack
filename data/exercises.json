@@ -1,0 +1,24 @@
+{
+  "exercises": [
+    {"exercise_id": "ex_001", "name": "Push Up", "target_muscle": "Chest", "image": ""},
+    {"exercise_id": "ex_002", "name": "Pull Up", "target_muscle": "Back", "image": ""},
+    {"exercise_id": "ex_003", "name": "Squat", "target_muscle": "Leg", "image": ""},
+    {"exercise_id": "ex_004", "name": "Deadlift", "target_muscle": "Back", "image": ""},
+    {"exercise_id": "ex_005", "name": "Bench Press", "target_muscle": "Chest", "image": ""},
+    {"exercise_id": "ex_006", "name": "Overhead Press", "target_muscle": "Shoulder", "image": ""},
+    {"exercise_id": "ex_007", "name": "Barbell Row", "target_muscle": "Back", "image": ""},
+    {"exercise_id": "ex_008", "name": "Bicep Curl", "target_muscle": "Arm", "image": ""},
+    {"exercise_id": "ex_009", "name": "Tricep Dip", "target_muscle": "Arm", "image": ""},
+    {"exercise_id": "ex_010", "name": "Lateral Raise", "target_muscle": "Shoulder", "image": ""},
+    {"exercise_id": "ex_011", "name": "Leg Press", "target_muscle": "Leg", "image": ""},
+    {"exercise_id": "ex_012", "name": "Plank", "target_muscle": "Abs", "image": ""},
+    {"exercise_id": "ex_013", "name": "Crunch", "target_muscle": "Abs", "image": ""},
+    {"exercise_id": "ex_014", "name": "Hip Thrust", "target_muscle": "Glute", "image": ""},
+    {"exercise_id": "ex_015", "name": "Romanian Deadlift", "target_muscle": "Glute", "image": ""},
+    {"exercise_id": "ex_016", "name": "Incline Bench Press", "target_muscle": "Chest", "image": ""},
+    {"exercise_id": "ex_017", "name": "Cable Fly", "target_muscle": "Chest", "image": ""},
+    {"exercise_id": "ex_018", "name": "Lat Pulldown", "target_muscle": "Back", "image": ""},
+    {"exercise_id": "ex_019", "name": "Seated Cable Row", "target_muscle": "Back", "image": ""},
+    {"exercise_id": "ex_020", "name": "Hammer Curl", "target_muscle": "Arm", "image": ""}
+  ]
+}

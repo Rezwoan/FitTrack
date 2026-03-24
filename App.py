@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from views.auth_page import AuthPage
+from views.profile_setup_page import ProfileSetupPage
 
 
 class App(ctk.CTk):
@@ -37,13 +38,11 @@ class App(ctk.CTk):
             self.show_dashboard()
 
     def show_profile_setup(self):
-        # TODO: show profile setup page
         self.clear_window()
-        lbl = ctk.CTkLabel(self, text=f"Welcome {self.current_user['name']}! Please set up your profile.")
-        lbl.place(relx=0.5, rely=0.5, anchor="center")
+        ProfileSetupPage(self, self.current_user)
 
     def show_dashboard(self):
-        # TODO: show main dashboard
+        
         self.clear_window()
         lbl = ctk.CTkLabel(self, text=f"Dashboard — logged in as {self.current_user['name']}")
         lbl.place(relx=0.5, rely=0.5, anchor="center")

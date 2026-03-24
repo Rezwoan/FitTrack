@@ -72,3 +72,17 @@ def login(email, password):
                 return False, "Wrong password"
 
     return False, "No account found with that email"
+
+
+def save_profile(user_id, profile_data):
+    path = os.path.join(USERS_DIR, user_id, "profile.json")
+    with open(path, "w") as f:
+        json.dump(profile_data, f, indent=4)
+
+def mark_profile_complete(user_id):
+    users = load_users()
+    for u in users:
+        if u["user_id"] == user_id:
+            u["profile_complete"] = True
+            break
+    save_users(users)

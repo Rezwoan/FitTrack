@@ -1,6 +1,8 @@
 import customtkinter as ctk
 from views.auth_page import AuthPage
 from views.profile_setup_page import ProfileSetupPage
+from views.dashboard_page import DashboardPage
+from views.pages.active_workout_page import ActiveWorkoutPage
 
 
 class App(ctk.CTk):
@@ -24,12 +26,10 @@ class App(ctk.CTk):
             widget.destroy()
 
     def show_auth(self):
-        """Clears the window and displays the auth (login/signup) page."""
         self.clear_window()
         AuthPage(self)
 
     def on_login_success(self, user_data):
-        # called from auth page once login or signup works
         self.current_user = user_data
 
         if user_data["profile_complete"] == False:
@@ -42,7 +42,9 @@ class App(ctk.CTk):
         ProfileSetupPage(self, self.current_user)
 
     def show_dashboard(self):
-        
         self.clear_window()
-        lbl = ctk.CTkLabel(self, text=f"Dashboard — logged in as {self.current_user['name']}")
-        lbl.place(relx=0.5, rely=0.5, anchor="center")
+        DashboardPage(self, self.current_user)
+
+    def show_workout_session(self, user_data, workout):
+        self.clear_window()
+        ActiveWorkoutPage(self, user_data, workout)

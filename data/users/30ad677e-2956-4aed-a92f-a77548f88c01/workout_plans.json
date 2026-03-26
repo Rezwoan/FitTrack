@@ -1,3 +1,115 @@
 {
-    "plans": []
+    "plans": [
+        {
+            "workout_id": "d22b925a-80a9-439b-9b2f-9662605e1f7f",
+            "name": "Upper",
+            "exercises": [
+                {
+                    "exercise_id": "ex_005",
+                    "exercise_name": "Bench Press",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 80.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 80.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 80.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_006",
+                    "exercise_name": "Overhead Press",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 30.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 30.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 30.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_017",
+                    "exercise_name": "Cable Fly",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 40.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 40.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 40.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_018",
+                    "exercise_name": "Lat Pulldown",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 60.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 60.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 60.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_008",
+                    "exercise_name": "Bicep Curl",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 20.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 20.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 20.0,
+                            "done": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

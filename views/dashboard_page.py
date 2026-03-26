@@ -29,56 +29,68 @@ class DashboardPage(ctk.CTkFrame):
 
         ctk.CTkFrame(self.pnl_sidebar, height=1, fg_color="gray40").pack(fill="x", padx=16, pady=(0, 16))
 
-        btn_home = ctk.CTkButton(self.pnl_sidebar, text="Home", anchor="w",
-                                 command=self.show_home, fg_color="transparent")
-        btn_home.pack(fill="x", padx=10, pady=4)
+        self.btn_home = ctk.CTkButton(self.pnl_sidebar, text="🏠  Home", anchor="w",
+                                      command=self.show_home, fg_color="transparent")
+        self.btn_home.pack(fill="x", padx=10, pady=4)
 
-        btn_plans = ctk.CTkButton(self.pnl_sidebar, text="Workout Plans", anchor="w",
-                                  command=self.show_plans, fg_color="transparent")
-        btn_plans.pack(fill="x", padx=10, pady=4)
+        self.btn_plans = ctk.CTkButton(self.pnl_sidebar, text="📋  Workout Plans", anchor="w",
+                                       command=self.show_plans, fg_color="transparent")
+        self.btn_plans.pack(fill="x", padx=10, pady=4)
 
-        btn_exercises = ctk.CTkButton(self.pnl_sidebar, text="Exercises", anchor="w",
-                                      command=self.show_exercises, fg_color="transparent")
-        btn_exercises.pack(fill="x", padx=10, pady=4)
+        self.btn_exercises = ctk.CTkButton(self.pnl_sidebar, text="💪  Exercises", anchor="w",
+                                           command=self.show_exercises, fg_color="transparent")
+        self.btn_exercises.pack(fill="x", padx=10, pady=4)
 
-        btn_history = ctk.CTkButton(self.pnl_sidebar, text="History", anchor="w",
-                                    command=self.show_history, fg_color="transparent")
-        btn_history.pack(fill="x", padx=10, pady=4)
+        self.btn_history = ctk.CTkButton(self.pnl_sidebar, text="📅  History", anchor="w",
+                                         command=self.show_history, fg_color="transparent")
+        self.btn_history.pack(fill="x", padx=10, pady=4)
 
-        btn_profile = ctk.CTkButton(self.pnl_sidebar, text="Profile", anchor="w",
-                                    command=self.show_profile, fg_color="transparent")
-        btn_profile.pack(fill="x", padx=10, pady=4)
+        self.btn_profile = ctk.CTkButton(self.pnl_sidebar, text="👤  Profile", anchor="w",
+                                         command=self.show_profile, fg_color="transparent")
+        self.btn_profile.pack(fill="x", padx=10, pady=4)
 
-        btn_logout = ctk.CTkButton(self.pnl_sidebar, text="Logout", anchor="w",
-                                   command=self.handle_logout, fg_color="transparent")
-        btn_logout.pack(fill="x", padx=10, pady=(20, 10))
+        ctk.CTkFrame(self.pnl_sidebar, height=1, fg_color="gray40").pack(fill="x", padx=16, pady=(16, 8), side="bottom")
+        self.btn_logout = ctk.CTkButton(self.pnl_sidebar, text="Logout", anchor="w",
+                                        command=self.handle_logout, fg_color="transparent")
+        self.btn_logout.pack(fill="x", padx=10, pady=(0, 10), side="bottom")
 
     def clear_content(self):
         for w in self.pnl_content.winfo_children():
             w.destroy()
 
+    def highlight_nav(self, active_btn):
+        all_btns = [self.btn_home, self.btn_plans, self.btn_exercises, self.btn_history, self.btn_profile]
+        for btn in all_btns:
+            btn.configure(fg_color="transparent")
+        active_btn.configure(fg_color=("gray30", "gray30"))
+
     def show_home(self):
         from views.pages.home_page import HomePage
+        self.highlight_nav(self.btn_home)
         self.clear_content()
         HomePage(self.pnl_content, self.user_data, self.app)
 
     def show_plans(self):
         from views.pages.plans_page import PlansPage
+        self.highlight_nav(self.btn_plans)
         self.clear_content()
         PlansPage(self.pnl_content, self.user_data)
 
     def show_exercises(self):
         from views.pages.exercises_page import ExercisesPage
+        self.highlight_nav(self.btn_exercises)
         self.clear_content()
         ExercisesPage(self.pnl_content, self.user_data)
 
     def show_history(self):
         from views.pages.history_page import HistoryPage
+        self.highlight_nav(self.btn_history)
         self.clear_content()
         HistoryPage(self.pnl_content, self.user_data)
 
     def show_profile(self):
         from views.pages.profile_page import ProfilePage
+        self.highlight_nav(self.btn_profile)
         self.clear_content()
         ProfilePage(self.pnl_content, self.user_data)
 

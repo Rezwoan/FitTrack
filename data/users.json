@@ -7,6 +7,14 @@
             "password_hash": "$2b$12$D0gtgYcdcbH4HbwezgZxbOENYC8FDH0QsYb1mOXaybhmMfqewsIcm",
             "profile_complete": true,
             "created_at": "2026-03-26"
+        },
+        {
+            "user_id": "64fabc63-433a-4ed1-85b7-284f1e21a5f6",
+            "name": "Rezwoan",
+            "email": "frezwoan@gmail.com",
+            "password_hash": "$2b$12$cmCIPu6o2PGFHcBILezQIOtFdIGjrqO45HJo76rSCpWwq9Ljeepge",
+            "profile_complete": true,
+            "created_at": "2026-03-27"
         }
     ]
 }

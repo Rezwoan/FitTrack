@@ -1,0 +1,108 @@
+{
+    "user_id": "64fabc63-433a-4ed1-85b7-284f1e21a5f6",
+    "workout_id": "3846650c-cc01-4d06-9e6e-c5f719af4c03",
+    "workout_name": "Chest Day",
+    "date": "2026-03-27",
+    "body_weight": 81.0,
+    "exercises": [
+        {
+            "exercise_id": "ex_001",
+            "exercise_name": "Push Up",
+            "sets": [
+                {
+                    "reps": 10,
+                    "weight": 0.0,
+                    "done": true
+                },
+                {
+                    "reps": 10,
+                    "weight": 0.0,
+                    "done": true
+                },
+                {
+                    "reps": 10,
+                    "weight": 0.0,
+                    "done": true
+                }
+            ]
+        },
+        {
+            "exercise_id": "ex_005",
+            "exercise_name": "Bench Press",
+            "sets": [
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                }
+            ]
+        },
+        {
+            "exercise_id": "ex_017",
+            "exercise_name": "Cable Fly",
+            "sets": [
+                {
+                    "reps": 8,
+                    "weight": 40.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 40.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 40.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 40.0,
+                    "done": true
+                }
+            ]
+        },
+        {
+            "exercise_id": "ex_016",
+            "exercise_name": "Incline Bench Press",
+            "sets": [
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                },
+                {
+                    "reps": 8,
+                    "weight": 50.0,
+                    "done": true
+                }
+            ]
+        }
+    ]
+}

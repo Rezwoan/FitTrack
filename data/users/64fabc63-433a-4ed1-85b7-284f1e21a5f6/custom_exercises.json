@@ -1,0 +1,12 @@
+{
+    "exercises": [
+        {
+            "exercise_id": "3e8c3e88-fcae-486c-963c-a56ff32ece0b",
+            "name": "Spider Curl",
+            "target_muscle": "Arm",
+            "image": "",
+            "is_custom": true,
+            "created_by_user_id": "64fabc63-433a-4ed1-85b7-284f1e21a5f6"
+        }
+    ]
+}

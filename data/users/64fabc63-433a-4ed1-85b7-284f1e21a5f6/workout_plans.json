@@ -1,0 +1,199 @@
+{
+    "plans": [
+        {
+            "workout_id": "3846650c-cc01-4d06-9e6e-c5f719af4c03",
+            "name": "Chest Day",
+            "exercises": [
+                {
+                    "exercise_id": "ex_001",
+                    "exercise_name": "Push Up",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_005",
+                    "exercise_name": "Bench Press",
+                    "sets": [
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_017",
+                    "exercise_name": "Cable Fly",
+                    "sets": [
+                        {
+                            "reps": 8,
+                            "weight": 40.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 40.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 40.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 40.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_016",
+                    "exercise_name": "Incline Bench Press",
+                    "sets": [
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 50.0,
+                            "done": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "workout_id": "31d4a9e3-0b69-4dcb-b19e-f28eb01a1a29",
+            "name": "Back Day",
+            "exercises": [
+                {
+                    "exercise_id": "ex_002",
+                    "exercise_name": "Pull Up",
+                    "sets": [
+                        {
+                            "reps": 12,
+                            "weight": 0,
+                            "done": false
+                        },
+                        {
+                            "reps": 12,
+                            "weight": 0,
+                            "done": false
+                        },
+                        {
+                            "reps": 12,
+                            "weight": 0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_004",
+                    "exercise_name": "Deadlift",
+                    "sets": [
+                        {
+                            "reps": 8,
+                            "weight": 70.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 70.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 70.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_007",
+                    "exercise_name": "Barbell Row",
+                    "sets": [
+                        {
+                            "reps": 8,
+                            "weight": 45.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 45.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 8,
+                            "weight": 45.0,
+                            "done": false
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "ex_018",
+                    "exercise_name": "Lat Pulldown",
+                    "sets": [
+                        {
+                            "reps": 10,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 50.0,
+                            "done": false
+                        },
+                        {
+                            "reps": 10,
+                            "weight": 50.0,
+                            "done": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
